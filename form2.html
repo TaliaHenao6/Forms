@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <h1>Formulario HTML</h1>
+    <form action="/submit" method="post">
+      <fieldset>
+        <legend>Información Personal</legend>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder= "Escriba su nombre"  /><br />
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" placeholder= "Escriba su apellido"  /><br />
+        <label for="numero">Número de Identificación:</label>
+        <input type="number" id="numero" name="numero" placeholder= "Escriba su número de ID"  /><br />
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder= "Escriba su email"  /><br />
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" placeholder= "Escriba su contraseña"  /><br />
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder= "Escriba su teléfono "  /><br />
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input
+          type="date"
+          id="fecha_nacimiento"
+          name="fecha_nacimiento"
+        /><br />
+        <label for="color_favorito">Color Favorito:</label>
+        <input type="color" id="color_favorito" name="color_favorito" placeholder= "" /><br />
+        <label for="genero">Género:</label>
+        <input type="radio" id="hombre" name="genero" value="hombre" required>
+        <label for="hombre">Hombre</label>
+        <input type="radio" id="mujer" name="genero" value="mujer" required>
+        <label for="mujer">Mujer</label>
+        <input type="radio" id="otro" name="genero" value="otro" required>
+        <label for="otro">Otro</label><br />
+        <label for="checkbox">Checkbox:</label>
+        <input
+          type="checkbox"
+          id="checkbox"
+          name="checkbox"
+          value="opcion2"
+        /><br />
+        <label for="pais">País:</label>
+        <select id="pais" name="pais" required>
+          <option value="">Seleccione un país</option>
+          <option value="Argentina">Argentina</option>
+          <option value="Chile">Chile</option>
+          <option value="Colombia">Colombia</option>
+          <option value="España">España</option>
+          <option value="México">México</option>
+          <option value="Perú">Perú</option>
+          <option value="Uruguay">Uruguay</option>
+          <option value="Venezuela">Venezuela</option>
+        </select>
+        <br>
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" id="ciudad" name="ciudad" list="ciudades" required placeholder= "Seleccione su ciudad" >
+        <datalist id="ciudades">
+          <option value="Buenos Aires"></option>
+          <option value="Bogotá"></option>
+          <option value="Lima"></option>
+          <option value="Madrid"></option>
+          <option value="México DF"></option>
+          <option value="Montevideo"></option>
+          <option value="Santiago"></option>
+          <option value="Caracas"></option>
+        </datalist><br />
+        <label for="archivo">Archivo:</label>
+        <input type="file" id="archivo" name="archivo" /><br />
+        <label for="url">URL:</label>
+        <input type="url" id="url" name="url" placeholder= "URL"  /><br />
+        <br>
+        <label for="textarea">Info adicional:</label>
+        <textarea id="textarea" name="textarea" placeholder= "Mensaje" ></textarea><br />
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Reset</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
